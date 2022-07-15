@@ -116,12 +116,14 @@ section:nth-of-type(1) .rectangle{
 }
 .rectangle{
     background: grey;
-    width:80px;
+    max-width:80px;
+    width:100%;
     height:2px;
     margin:3%;
 }
 section .oneSlide .box{
-    width:300px;
+    max-width:300px;
+    width:100%;
     height:219px;
     background:rgba(245, 245, 245, 1);
     display:grid;
@@ -131,6 +133,7 @@ section .oneSlide .box{
 }
 section .firstBox{
     display:grid;
+    width:100%;
     justify-content: center;
     align-content:center;
     justify-items: center;
@@ -146,8 +149,8 @@ section:nth-of-type(2){
     display:grid;
     background: rgba(245, 245, 245, 1);
     min-height: 1469px;
-    width:1440px;
-    max-width: 100%;
+    max-width:1440px;
+    width: 100%;
     justify-items: center;
 
 }
@@ -167,7 +170,8 @@ section:nth-of-type(2) div{
 section:nth-of-type(2) div p{
     display:grid;
     text-align: center;
-    width:299.98px;
+    max-width:299.98px;
+    width:100%;
     height:383.98px;
     background:white;
 }
@@ -229,11 +233,13 @@ section:nth-of-type(4) div{
     align-items: center;
 }
 section:nth-of-type(4) div p{
-    width:330px;
+    max-width:330px;
+    width:100%;
 }
 section:nth-of-type(4) div span{
     height:215px;
-    width:2px;
+    max-width:2px;
+    width:100%;
     background: grey;
 }
 /* SECTION FIVE  */
