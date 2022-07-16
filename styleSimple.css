@@ -212,6 +212,11 @@ section:nth-of-type(3) div{
     grid-template-columns:repeat(auto-fit,220px);
     gap:10px;
 }
+@media(max-width:220px){
+  section:nth-of-type(3) div{
+    grid-template-columns:repeat(auto-fit,minmax(1px,220px));
+  }
+}
 section:nth-of-type(3) div p{
     max-width:220px;
     width:100%;
