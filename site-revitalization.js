@@ -118,3 +118,8 @@ if(wiw=>500){
 if(scrollY>100){
 
 }
+
+
+function upTop(){
+  window.scroll(0,0);
+}

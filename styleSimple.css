@@ -307,6 +307,7 @@ footer button{
 }
 footer span{
     color:white;
+    text-shadow: 1px 1px green;
 }
 footer a{
     color:antiquewhite;
