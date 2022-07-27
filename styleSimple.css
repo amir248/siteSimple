@@ -317,10 +317,10 @@ footer a{
   background: none;
 }
 body > section > a{
-  margin:3%;
+  margin:10px;;
   border-radius: 30px;
   background: rgba(255,0,255,0.3);
-  padding:3%;
+  padding:7px;
   text-decoration: none;
 }
 body > section > a:hover{
