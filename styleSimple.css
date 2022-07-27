@@ -313,6 +313,17 @@ footer a{
     text-shadow:1px 1px green;
     text-decoration:none;
 }
-/* #mEnu{
-
-} */
+#mEnu{
+  background: none;
+}
+body > section > a{
+  margin:3%;
+  border-radius: 30px;
+  background: rgba(255,0,255,0.3);
+  padding:3%;
+  text-decoration: none;
+}
+body > section > a:hover{
+  background: black;
+  color:yellow;
+}

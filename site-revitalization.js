@@ -1,5 +1,43 @@
+const menuList='<a href="https://www.figma.com/file/6l7xEWh5vOwSLGXUXtlYQv/MINIMAL?node-id=1%3A2">ORIGIN</a><a href="#process">PROCESS</a><a href="#projects">PROJECTS</a><a href="#team">TEAM</a><a href="#contact">CONTACT</a> '
+
 window.addEventListener('scroll',()=>{
   // console.log('scroll');
+  let clickCount=+0;
+  function hiMenu(){
+    clickCount++;
+    console.log('LOL');
+    // document.addEventListener
+    if(clickCount==1){
+      let Section =document.createElement('section');
+      document.body.append(Section);
+      Section.style.cssText=`
+      display:flex;
+      position:fixed;
+      justify-content:center;
+      align-items:center;
+      flex-direction:column;
+      width:100%;
+      height:100%;
+      background:white;
+      z-index:0;
+      top:0;
+      `;
+      document.querySelector('body').style.overflow=`hidden`;
+      // document.querySelector('body > section > a').style.cssText=`
+      //   margin:3%;
+      //   border-radius:30px;
+      //   background:rgba(255,0,255,0.3);
+      // `;
+    }
+      // body > section
+      document.querySelector('body > section').addEventListener('click',()=>{
+        document.querySelector('body > section').remove();
+        document.querySelector('body').style.overflow=`auto`;
+      });
+      clickCount=0;
+
+  }//hiMenu
+
   if(scrollY>=100){
       document.querySelector('body > main > header > nav').style.cssText=`
       position:fixed;
@@ -12,7 +50,7 @@ window.addEventListener('scroll',()=>{
     }
     document.querySelector('body > main > header > nav > ul').style.display='none';
     if(!document.querySelector('body > main > header > nav > p:nth-child(3)')){
-      let menu=document.createElement('p');
+      const menu=document.createElement('p');
       document.querySelector('body > main > header > nav').append(menu);
       menu.style.cssText=`background:rgba(0,255,0,0.1);border-radius:50%;`
       let line=document.createElement('span');
@@ -32,8 +70,18 @@ window.addEventListener('scroll',()=>{
         `;
         menu.setAttribute('title','Menu');
         menu.id="mEnu";
+        // menu.onclick=hiMenu;
+        console.log(typeof(document.querySelector('#mEnu')));
+              // append
+        // document.querySelector('body > main > header > nav').append(menu);
+          document.querySelector('#mEnu').addEventListener('click',()=>{
+            hiMenu();
+              document.querySelector('body > section').innerHTML=`${menuList}`;
+            // console.log('menu_Click');
+          });
+
     }else{
-      console.log("est");
+      console.log("SCROLL_est");
     }
   }else if(scrollY<=100){
     document.querySelector('body > main > header > nav').style.cssText=`
@@ -59,13 +107,11 @@ window.addEventListener('scroll',()=>{
 // If the screen width is more than five acres
 let wiw=window.innerWidth;
 if(wiw=>500){
-  console.log("win");
+  console.log("wiw");
 }
-
-// Ahtun! Ahtun main campfF und uberlieben/
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11
+// Ahtung! Ahtung main campfF und uberlieben/
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 if(scrollY>100){
-  // console.log(typeof(document.querySelector('#mEnu')));
-document.querySelector('#mEnu').addEventListener('click',()=>{
-  console.log('menu_Click')
-});
+
 }
