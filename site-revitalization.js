@@ -5,7 +5,7 @@ window.addEventListener('scroll',()=>{
   let clickCount=+0;
   function hiMenu(){
     clickCount++;
-    console.log('LOL');
+    // console.log('LOL');
     // document.addEventListener
     if(clickCount==1){
       let Section =document.createElement('section');
@@ -84,7 +84,7 @@ window.addEventListener('scroll',()=>{
             background:yellow; width:77px;border-radius:30px;font-size:30px; text-weld:bold;
           `;
     }else{
-      console.log("SCROLL_est");
+      // console.log("SCROLL_est");
     }
   }else if(scrollY<=100){
     document.querySelector('body > main > header > nav').style.cssText=`
@@ -110,7 +110,7 @@ window.addEventListener('scroll',()=>{
 // If the screen width is more than five acres
 let wiw=window.innerWidth;
 if(wiw=>500){
-  console.log("wiw");
+  // console.log("wiw");
 }
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11
 // Ahtung! Ahtung main campfF und uberlieben/
