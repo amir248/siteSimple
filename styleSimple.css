@@ -44,6 +44,8 @@ header img{
 /* strong  */
 .imAges{
     background: url("img/IMAGE.jpg") center center no-repeat;
+    overflow-x:hidden; /*чтобы было видно что parallax */
+
 }
 header strong{
     margin-top:3%;
