@@ -12,42 +12,31 @@ function showCoords(evt){
     "clientY value: " + evt.clientY + "\n"
   );
   console.log(evt);
-  if(evt.clientY<120){
-    console.log('evt.clientY<200');
+  if(evt.clientY<170||evt.clientY>200){
+    console.log('evt.clientY>200&&120');
     parallaxPoz.top=+30;
     parallaxPoz.right=+0;
     parallaxPoz.left=+0;
     parallaxPoz.bottom=+0;
-  }else if(evt.clientY>150){
-    console.log('evt.clientY<50');
-    parallaxPoz.top=+10;
-    parallaxPoz.right=0;
-    parallaxPoz.left=+0;
-    parallaxPoz.bottom=+0;
-  }else if(evt.clientY<207){
-    console.log('evt.clientY>17');
-    parallaxPoz.top=+10;
-    parallaxPoz.right=+0;
-    parallaxPoz.left=+70;
-    parallaxPoz.bottom=+0;
-  }else if(evt.clientY>250&&evt.clientY<200){
-    console.log('evt.clientY>217');
-    parallaxPoz.top=+100;
-    parallaxPoz.right=+0;
-    parallaxPoz.left=+0;
-    parallaxPoz.bottom=+0;
-  }else if(evt.clientY<270&&evt.clientY>200){
-    console.log('evt.clientY>270');
-    parallaxPoz.top=+0;
-    parallaxPoz.right=+0;
-    parallaxPoz.left=+50;
-    parallaxPoz.bottom=+70;
   }else{
     console.log("evt.elset");
     parallaxPoz.top=+0;
     parallaxPoz.right=+0;
     parallaxPoz.left=+0;
-    parallaxPoz.bottom=+0;
+    parallaxPoz.bottom=+30;
+  }
+  if(evt.clientX<570||evt.clientX>3300){
+    console.log('evt.clientX>XXX');
+    // parallaxPoz.top=+0;
+    parallaxPoz.right=+30;
+    parallaxPoz.left=+0;
+    // parallaxPoz.bottom=+0;
+  }else{
+    console.log("evt.elset");
+    // parallaxPoz.top=+0;
+    parallaxPoz.right=+0;
+    // parallaxPoz.bottom=+0;
+    parallaxPoz.left=+30;
   }
 }
 
@@ -61,6 +50,7 @@ document.querySelector('body > main > header > div.imAges > strong:nth-child(1)'
   left:${parallaxPoz.left}px;
   right:${parallaxPoz.right}px;
   bottom:${parallaxPoz.bottom}px;
+  transition: all 1s linear;
   `;
 
 });
@@ -68,11 +58,17 @@ document.querySelector('body > main > header > div.imAges > strong:nth-child(1)'
     showCoords(event);
   document.querySelector('body > main > header > div.imAges > strong:nth-child(1)').style.cssText=`
   position:relative;
-  top:${parallaxPoz.top}px;
-  left:${parallaxPoz.left}px;
-  right:${parallaxPoz.right}px;
-  bottom:${parallaxPoz.bottom}px;
+  // top:${parallaxPoz.top}px;
+  // left:${parallaxPoz.left}px;
+  // right:${parallaxPoz.right}px;
+  // bottom:${parallaxPoz.bottom}px;
+  top:0;
+  lett:0;
+  right:0;
+  bottom:0;
+   transition: all 1s linear;
   `;
+
 });
 
 document.querySelector('body > main > header > div.imAges > strong:nth-child(2)').addEventListener('mousemove',()=>{
@@ -85,6 +81,8 @@ document.querySelector('body > main > header > div.imAges > strong:nth-child(2)'
   left:${parallaxPoz.left}px;
   right:${parallaxPoz.right}px;
   bottom:${parallaxPoz.bottom}px;
+  transition: all 1s linear;
+
   `;
 
 });
@@ -92,10 +90,12 @@ document.querySelector('body > main > header > div.imAges > strong:nth-child(2)'
     showCoords(event);
   document.querySelector('body > main > header > div.imAges > strong:nth-child(2)').style.cssText=`
   position:relative;
-  top:${parallaxPoz.top}px;
-  left:${parallaxPoz.left}px;
-  right:${parallaxPoz.right}px;
-  bottom:${parallaxPoz.bottom}px;
+  top:0;
+  lett:0;
+  right:0;
+  bottom:0;
+  transition: all 1s linear;
+
   `;
 });
 
