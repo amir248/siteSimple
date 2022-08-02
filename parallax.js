@@ -4,7 +4,7 @@ const parallaxPoz={// const более глобальный вариант
   bottom : 0,
   top : 0
 }
-console.log("paralax");
+console.log("parallax");
 
 function showCoords(evt){
   console.log(
