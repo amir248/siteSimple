@@ -21,16 +21,26 @@ document.querySelector('body > main > header > nav > ul > li:nth-child(6) > a').
     document.querySelector('body > main:nth-child(1) > header:nth-child(1) > div:nth-child(4) > button:nth-child(1)').setAttribute('id','goStart');
   }
 let puth='https://amir248.github.io/siteSimple//post.html';
-  function run(){
-  var xhr = new XMLHttpRequest();
-  xhr.open("GET", `${puth}`, true);
-  xhr.onreadystatechange = function() {//Вызывает функцию при смене состояния.
-  if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
-  document.getElementById("demo").innerHTML = this.responseText;
+  // function run(){
+  // var xhr = new XMLHttpRequest();
+  // xhr.open("GET", `${puth}`, true);
+  // xhr.onreadystatechange = function() {//Вызывает функцию при смене состояния.
+  // if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+  // document.getElementById("demo").innerHTML = this.responseText;
+  // }
+  // }
+  // xhr.send();
+  // }
+
+  function run() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function() {
+      document.getElementById("demo").innerHTML = this.responseText;
+      }
+    xhttp.open("GET", `${puth}`, true);
+    xhttp.send();
   }
-  }
-  xhr.send();
-  }
+run();
   // run();
   // console.log(typeof(goStart));
   let countClick=+0;
@@ -88,15 +98,7 @@ let puth='https://amir248.github.io/siteSimple//post.html';
           console.log(countClick);
           document.querySelector('body > main > header > div:nth-child(4) > span:nth-child(4)').remove();
 
-          // function loadDoc() {
-          //   const xhttp = new XMLHttpRequest();
-          //   xhttp.onload = function() {
-          //     document.getElementById("demo").innerHTML = this.responseText;
-          //     }
-          //   xhttp.open("GET", "post.html", true);
-          //   xhttp.send();
-          // }
-          // loadDoc();
+
 
           puth='https://amir248.github.io/siteSimple/audio2.html';
           run();
