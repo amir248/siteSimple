@@ -20,10 +20,10 @@ document.querySelector('body > main > header > nav > ul > li:nth-child(6) > a').
     document.querySelector('body > main > header > div:nth-child(4)').append(btn);
     document.querySelector('body > main:nth-child(1) > header:nth-child(1) > div:nth-child(4) > button:nth-child(1)').setAttribute('id','goStart');
   }
-
+let puth='https://amir248.github.io/siteSimple//post.html';
   function run(){
   var xhr = new XMLHttpRequest();
-  xhr.open("GET", "https://amir248.github.io/siteSimple/post.html", true);
+  xhr.open("GET", `${puth}`, true);
   xhr.onreadystatechange = function() {//Вызывает функцию при смене состояния.
   if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
   document.getElementById("demo").innerHTML = this.responseText;
@@ -31,7 +31,7 @@ document.querySelector('body > main > header > nav > ul > li:nth-child(6) > a').
   }
   xhr.send();
   }
-  run();
+  // run();
   // console.log(typeof(goStart));
   let countClick=+0;
   // what is?
@@ -59,8 +59,9 @@ document.querySelector('body > main > header > nav > ul > li:nth-child(6) > a').
 
           // let audio=document.createElement('source');
           // document.querySelector('body > main > header > div:nth-child(4) > p').append(audio);
+          let y='/home/chikchicly/Tysur/prodjects/Final_project/siteSimple/audio/dva2.mp3';
+          puth='https://amir248.github.io/siteSimple/audio2.html';
           run();
-
         }else if(countClick==2){
           console.log(countClick);
           let count=document.createElement('span');
@@ -76,6 +77,9 @@ document.querySelector('body > main > header > nav > ul > li:nth-child(6) > a').
               document.querySelector('body > main > header > div:nth-child(4) > p > audio').append(source);
               document.querySelector('body > main > header > div:nth-child(4) > p > audio').setAttribute('autoplay','');
           document.querySelector('body > main > header > div:nth-child(4) > p > audio > source').setAttribute('src','audio/odin1.mp3');
+
+          puth='https://amir248.github.io/siteSimple/audio2.html';
+
           run();
 
         }else if(countClick==3){
