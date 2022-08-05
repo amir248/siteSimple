@@ -34,6 +34,7 @@ document.querySelector('body > main > header > nav > ul > li:nth-child(6) > a').
         console.log(timerOn);
       }else{
         console.log("the button has already been pressed");
+        
       }
       });
     }else{
