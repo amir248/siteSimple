@@ -98,7 +98,7 @@ let puth='https://amir248.github.io/siteSimple//post.html';
           // }
           // loadDoc();
 
-          puth='https://amir248.github.io/siteSimple/audio3.html';
+          puth='https://amir248.github.io/siteSimple/audio2.html';
           run();
           // document.getElementById("demo").innerHTML="oK";
         }else if(countClick==4){
@@ -109,48 +109,48 @@ let puth='https://amir248.github.io/siteSimple//post.html';
         }else if(countClick==5){
           document.querySelector('body > main > header > div:nth-child(4) > span').innerHTML=`4`;
           console.log(countClick);
-          puth='https://amir248.github.io/siteSimple/audio3.html';
+          puth='https://amir248.github.io/siteSimple/audio4.html';
           run();
         }else if(countClick==6){
           document.querySelector('body > main > header > div:nth-child(4) > span').innerHTML=`5`;
           console.log(countClick);
-          puth='https://amir248.github.io/siteSimple/audio3.html';
+          puth='https://amir248.github.io/siteSimple/audio5.html';
           run();
         }else if(countClick==7){
           document.querySelector('body > main > header > div:nth-child(4) > span').innerHTML=`6`;
           console.log(countClick);
-          puth='https://amir248.github.io/siteSimple/audio3.html';
+          puth='https://amir248.github.io/siteSimple/audio6.html';
           run();
         }else if(countClick==8){
           document.querySelector('body > main > header > div:nth-child(4) > span').innerHTML=`7`;
           console.log(countClick);
-          puth='https://amir248.github.io/siteSimple/audio3.html';
+          puth='https://amir248.github.io/siteSimple/audio7.html';
           run();
         }else if(countClick==9){
           document.querySelector('body > main > header > div:nth-child(4) > span').innerHTML=`8`;
           console.log(countClick);
-          puth='https://amir248.github.io/siteSimple/audio3.html';
+          puth='https://amir248.github.io/siteSimple/audio8.html';
           run();
         }else if(countClick==10){
           document.querySelector('body > main > header > div:nth-child(4) > span').innerHTML=`9`;
           console.log(countClick);
-          puth='https://amir248.github.io/siteSimple/audio3.html';
+          puth='https://amir248.github.io/siteSimple/audio9.html';
           run();
         }else if(countClick==11){
           document.querySelector('body > main > header > div:nth-child(4) > span').innerHTML=`10`;
           console.log(countClick);
-          puth='https://amir248.github.io/siteSimple/audio3.html';
+          puth='https://amir248.github.io/siteSimple/audio10.html';
           run();
         }else if(countClick==12){
           document.querySelector('body > main > header > div:nth-child(4) > span').innerHTML=`11`;
           console.log(countClick);
-          puth='https://amir248.github.io/siteSimple/audio3.html';
+          puth='https://amir248.github.io/siteSimple/audio11.html';
           run();
         }else if(countClick==13){
           document.querySelector('body > main > header > div:nth-child(4) > span').innerHTML=`12`;
           countClick=0;
           console.log(countClick);
-          puth='https://amir248.github.io/siteSimple/audio3.html';
+          puth='https://amir248.github.io/siteSimple/audio12.html';
           run();
         }else if(countClick==14){
           document.querySelector('body > main > header > div:nth-child(4) > span').innerHTML=`newsCircle`;
