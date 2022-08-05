@@ -21,17 +21,6 @@ document.querySelector('body > main > header > nav > ul > li:nth-child(6) > a').
     document.querySelector('body > main:nth-child(1) > header:nth-child(1) > div:nth-child(4) > button:nth-child(1)').setAttribute('id','goStart');
   }
 let puth='https://amir248.github.io/siteSimple//post.html';
-  // function run(){
-  // var xhr = new XMLHttpRequest();
-  // xhr.open("GET", `${puth}`, true);
-  // xhr.onreadystatechange = function() {//Вызывает функцию при смене состояния.
-  // if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
-  // document.getElementById("demo").innerHTML = this.responseText;
-  // }
-  // }
-  // xhr.send();
-  // }
-
   function run() {
     const xhttp = new XMLHttpRequest();
     xhttp.onload = function() {
@@ -40,7 +29,6 @@ let puth='https://amir248.github.io/siteSimple//post.html';
     xhttp.open("GET", `${puth}`, true);
     xhttp.send();
   }
-run();
   // run();
   // console.log(typeof(goStart));
   let countClick=+0;
@@ -92,17 +80,16 @@ run();
           puth='https://amir248.github.io/siteSimple/post.html';
 
           run();
-
+  document.querySelector('body > main > header > div:nth-child(4) > span:nth-child(4)').remove();
         }else if(countClick==3){
           document.querySelector('body > main > header > div:nth-child(4) > span').innerHTML=`2`;
           console.log(countClick);
-          document.querySelector('body > main > header > div:nth-child(4) > span:nth-child(4)').remove();
+          // document.querySelector('body > main > header > div:nth-child(4) > span:nth-child(4)').remove();
 
 
 
           puth='https://amir248.github.io/siteSimple/audio2.html';
           run();
-          // document.getElementById("demo").innerHTML="oK";
         }else if(countClick==4){
           document.querySelector('body > main > header > div:nth-child(4) > span').innerHTML=`3`;
           console.log(countClick);
