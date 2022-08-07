@@ -44,7 +44,7 @@ let puth='https://amir248.github.io/siteSimple//post.html';
         document.querySelector('body > main > header > div:nth-child(4)').append(timer);
         let timerOn=Math.floor(Math.random()* 100);
         console.log(timerOn);
-
+        timer.innerHTML=`<a href="page.html">connection of numbers</a>`;
 
       }else{
         countClick++;
@@ -143,13 +143,14 @@ let puth='https://amir248.github.io/siteSimple//post.html';
           run();
         }else if(countClick==14){
           document.querySelector('body > main > header > div:nth-child(4) > span').innerHTML=`newsCircle`;
+          puth='https://amir248.github.io/siteSimple/776.html';
+          run();
           countClick=0;
           document.querySelector('body > main > header > div:nth-child(4) > span:nth-child(3)').remove();
 
-          document.querySelector('body > main > header > div:nth-child(4) > span:nth-child(3)').remove();
-          return countClick=0;
 
           console.log(countClick);
+          return countClick=0;
         }else{
           document.querySelector('body > main > header > div:nth-child(4) > span').innerHTML=``;
           console.log('newCirle');
