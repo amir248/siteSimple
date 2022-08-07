@@ -9,20 +9,90 @@
   <body>
     <main>
       <h1>connection of numbers</h1>
-
     </main>
   </body>
   <script type="text/javascript">
-  const style= `<style>
-    *{
-      margin:0;
-      background:green;
-    }
-  </style>
-  `;
+  const style=document.createElement('style');
+  style.innerHTML= `
+  *{
+    margin:0;
+    background:green;
+    text-align:center;
+  }`;
     document.querySelector('head').append(style);
-    // style.cssText={
-    //   background:green;
-    // }
+    const button=document.createElement('button');
+    document.querySelector('main').append(button);
+    button.innerHTML="countClickInButton";
+    button.style.cssText=`width:300px; min-height:30px;border-radius:7px;background:coral;text-shadow:white 1px 1px;`
+    let boxAudio=document.createElement('div');
+    document.querySelector('main').append(boxAudio);
+    boxAudio.setAttribute('id','demo');
+    // path and ajax audio count click
+    let puth='https://amir248.github.io/siteSimple//post.html';
+      function run() {
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function() {
+          document.getElementById("demo").innerHTML = this.responseText;
+          }
+        xhttp.open("GET", `${puth}`, true);
+        xhttp.send();
+      }
+      const cLOL={
+        count:0
+      }
+      document.querySelector('button').addEventListener('click',()=>{
+        cLOL.count++;
+        if(cLOL.count==0){
+          console.log("nul");
+        }else if(cLOL.count==1){
+          console.log('one');
+        }else if(cLOL.count==2){
+          console.log('two');
+        }else if(cLOL.count==3){
+          console.log('three');
+        }else if(cLOL.count==4){
+          console.log('foгк');
+        }else if(cLOL.count==5){
+          console.log('five');
+        }else if(cLOL.count==6){
+          console.log('six');
+        }else if(cLOL.count==7){
+          console.log('seven');
+        }else if(cLOL.count==8){
+          console.log('eight');
+        }else if(cLOL.count==9){
+          console.log('nine');
+        }else if(cLOL.count==10){
+          puth='https://amir248.github.io/siteSimple//post.html';
+          run()
+          setTimeout(()=>{
+            puth=''
+          })
+          console.log('ten');
+        }else if(cLOL.count==11){
+          console.log('eleven');
+        }else if(cLOL.count==12){
+          console.log('twelve');
+        }else if(cLOL.count==13){
+          console.log('thirteen');
+        }else if(cLOL.count==14){
+          console.log('fourteen');
+        }else if(cLOL.count==15){
+          console.log('fifteen');
+        }else if(cLOL.count==16){
+          console.log('sixteen');
+        }else if(cLOL.count==17){
+          console.log('seventeen');
+        }else if(cLOL.count==18){
+          console.log('eighteen');
+        }else if(cLOL.count==19){
+          console.log('nineteen');
+        }else if(cLOL.count==20){
+          console.log('twenty');
+        }else{
+          console.log('LOL');
+        }
+      });
+
   </script>
 </html>
