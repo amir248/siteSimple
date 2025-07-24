@@ -79,7 +79,8 @@ window.addEventListener('scroll',()=>{
               document.querySelector('body > section').innerHTML=`${menuList}`;
             // console.log('menu_Click');
           });
-          document.querySelector('body > main > header > nav > p:nth-child(1)').innerHTML=`<a href="tel:+79528885656">Amir&nbsp;📞</a>`;
+          document.querySelector('body > main > header > nav > p:nth-child(1)').innerHTML=`<a href="https://wa.me/+79528885656?text=Hi%20I need Landing Page!">Amir&nbsp;✅</a>`;
+          // <a href="tel:+79528885656">Amir&nbsp;📞</a>
           document.querySelector('body > main > header > nav > p:nth-child(1)').style.cssText=`
             background:yellow; width:77px;border-radius:30px;font-size:30px; text-weld:bold;
           `;
